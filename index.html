@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Vinilos Jazz</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: EstateAgency - v2.2.1
+  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+ 
+    <!-- ======= Search Section ======= -->
+    <div class="click-closed"></div>
+    <!--/ Form Search Star /-->
+    <div class="box-collapse">
+      <div class="title-box-d">
+        <h3 class="title-d">Buscar en Vinilos Jazz</h3>
+      </div>
+      <span class="close-box-collapse right-boxed ion-ios-close"></span>
+      <div class="box-collapse-wrap form">
+        <form class="form-a">
+          <div class="row">
+            <div class="col-md-12 my-2">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg form-control-a" placeholder="Album, artista, sello...">
+              </div>
+            </div>
+            
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-b">Buscar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+     <!-- ****Modal login****-->
+     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-header bg-dark">
+           <h5 class="modal-title" id="exampleModalLabel">
+             Accede a tu área personal
+           </h5>
+           <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           <form>
+             <div class="form-group">
+               <label for="exampleInputEmail1">Usuario o correo electrónico</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+             </div>
+             <div class="form-group">
+               <label for="exampleInputPassword1">Contraseña</label>
+               <input type="password" class="form-control" id="exampleInputPassword1" />
+               <small id="emailHelp" class="form-text text-muted">Olvidaste tu contraseña?
+                 <a href="#" class="">Pincha aqui</a></small>
+             </div>
+             <div class="form-group form-check">
+               <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+               <label class="form-check-label" for="exampleCheck1">Recordar mi cuenta</label>
+             </div>
+             <button type="submit" class="btn btn-dark">Accede</button>
+           </form>
+         </div>
+         <div class="modal-footer">
+           <small class="pr-4">Aún no tienes una cuenta con nosotros?</small>
+           <button type="button" class="btn btn-dark">
+             Crea una nueva cuenta
+           </button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!--**** Modal registro****-->
+   <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header bg-dark">
+           <h5 class="modal-title" id="signupModalLabel">
+             Registrate en Vinilos Jazz
+           </h5>
+           <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           <form>
+             <div class="form-group">
+               <label for="exampleFormControlInput1">Correo electrónico</label>
+               <input type="email" class="form-control" id="exampleFormControlInput1"
+                 placeholder="correo@ejemplo.com" />
+             </div>
+             <div class="form-group">
+               <label for="exampleInputPassword1">Contraseña
+                 <small id="passwordHelp" class="form-text text-muted">La contraseña debe tener mínimo 6 caracteres y
+                   por lo
+                   menos un número</small>
+               </label>
+               <input type="password" class="form-control" id="exampleInputPassword1" />
+             </div>
+             <div class="form-group">
+               <label for="exampleInputPassword2">Confirma tu contraseña</label>
+               <input type="password" class="form-control" id="exampleInputPassword2" />
+             </div>
+           </form>
+           <div class="form-group form-check">
+             <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+             <label class="form-check-label" for="exampleCheck1">Recordar mi cuenta</label>
+           </div>
+           <div class="form-group form-check">
+             <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+             <label class="form-check-label" for="exampleCheck2">Acepto los términos y condiciones</label>
+           </div>
+         </div>
+         <div class="modal-footer">
+           <small class="pr-4">Ya tienes una cuenta con nosotros?</small>
+           <button type="button" class="btn btn-dark">
+             Accede a tu área personal
+           </button>
+         </div>
+       </div>
+     </div>
+   </div>
+  
+    <!-- ======= Header/Navbar ======= -->
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+      <div class="container">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="navbar-brand text-brand" href="index.html">Vinilos |<span class="color-b"> Jazz</span></a>
+        <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
+          <span class="fa fa-search" aria-hidden="true"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Música
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#music">Catálogo Completo</a>
+                <a class="dropdown-item" href="#">Ofertas</a>
+                <a class="dropdown-item" href="#">Últimos lanzamientos</a>
+                <a class="dropdown-item" href="#">Catálogo de discos clásicos</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+              
+          <!-- link login y registro-->
+      <div class="pb-2" style="cursor: pointer; height: auto">
+        <a class="col-2 text-dark text-decoration-none border-right border-dark" data-toggle="modal"
+          data-target="#loginModal">
+          Login
+        </a>
+        <a class="col-2 text-decoration-none text-dark" data-toggle="modal" data-target="#registroModal">
+          Registro
+        </a>
+      </div>
+
+     
+
+  
+        <!--****Boton de busqueda****-->
+        <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block mb-2" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
+          <span class="fa fa-search" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav><!-- End Header/Navbar -->
+
+    
+ 
+  <!-- ======= SLIDER ======= -->
+  <div class="intro intro-carousel">
+    <div id="carousel" class="owl-carousel owl-theme">
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/cropturntable_2.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">                    
+                    <h1 class="intro-title mb-4">
+                      <span class="color-b">Somos especialistas</span> 
+                      <br> En Vinilos de Jazz
+                    </h1>
+                    <p class="intro-subtitle intro-price">
+                      <a href="#"><span class="price-a">Ver catálogo</span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/cropturntable_1.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <h1 class="intro-title mb-4">
+                      <span class="color-b">Nuevos Lanzamientos</span> 
+                      <br> Y los clasicos de siempre
+                    </h1>
+                    <p class="intro-subtitle intro-price">
+                      <a href="#"><span class="price-a">Ver catálogo</span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/turntable_1.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <h1 class="intro-title mb-4">
+                      <span class="color-b">Somos especialistas </span> 
+                      <br> En vinilos de Jazz
+                    <p class="intro-subtitle intro-price">
+                      <a href="#"><span class="price-a">Ver catálogo</span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/album-crop_4.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <h1 class="intro-title mb-4">
+                      <span class="color-b">Nuevos Lanzamientos</span> 
+                      <br> Y los clasicos de siempre
+                    </h1>
+                    <p class="intro-subtitle intro-price">
+                      <a href="#"><span class="price-a">Ver catálogo</span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main id="main">
+
+    <!-- ======= Quienes Somos ======= -->
+    <section class="section-about section-t8" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Quienes somos</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vero illum, voluptatem iste nostrum sed.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vero illum, voluptatem iste nostrum sed.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vero illum, voluptatem iste nostrum sed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-box-c foo">
+              <div class="card-header-c d-flex">
+                <div class="card-box-ico">
+                  <span class="ion-md-disc"></span>
+                </div>
+                <div class="card-title-c align-self-center">
+                  <h3 class="title-c">Catalogo amplio</h3>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
+                  convallis a pellentesque
+                  nec, egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer-c">
+                <a href="#" class="link-c link-icon">Ver mas
+                  <span class="ion-ios-arrow-forward"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-c foo">
+              <div class="card-header-c d-flex">
+                <div class="card-box-ico">
+                  <span class="ion-md-disc"></span>
+                </div>
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c">Discos clásicos</h2>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                  Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Mauris blandit
+                  aliquet elit, eget tincidunt
+                  nibh pulvinar a.
+                </p>
+              </div>
+              <div class="card-footer-c">
+                <a href="#" class="link-c link-icon">Ver mas
+                  <span class="ion-ios-arrow-forward"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-c foo">
+              <div class="card-header-c d-flex">
+                <div class="card-box-ico">
+                  <span class="ion-md-disc"></span>
+                </div>
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c">Nuevos lanzamientos</h2>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
+                  convallis a pellentesque
+                  nec, egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer-c">
+                <a href="#" class="link-c link-icon">Ver mas
+                  <span class="ion-ios-arrow-forward"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Más vendidos======= -->
+    <section class="section-property section-t8" id="music">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Más vendidos</h2>
+              </div>
+              <div class="title-link">
+                <a href="#">Ver mas
+                  <span class="ion-ios-arrow-forward"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="property-carousel" class="owl-carousel owl-theme">
+          <div class="carousel-item-b">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="img/Art Blakey and the Jazz Messengers - Moanin’ (1959).jpeg" alt="" class="img-a img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <p class="card-title-a">
+                      <a href="#">Art Blakey -
+                        <br /> Moanin'</a>
+                    </p>
+                  </div>
+                  <div class="card-body-a">                    
+                    <a href="#" class="link-a">Click para ver mas
+                      <span class="ion-ios-arrow-forward"></span>
+                    </a>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Año</h4>
+                        <span>1957
+                        </span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Estado</h4>
+                        <span>Mint</span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Discografica</h4>
+                        <span>Blue Note</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item-b">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="img/giant-steps.jpeg" alt="" class="img-a img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <p class="card-title-a">
+                      <a href="#">Jhon Coltrane -
+                        <br /> Giant Steps</a>
+                    </p>
+                  </div>
+                  <div class="card-body-a">
+                    <a href="#" class="link-a">Click para ver mas
+                      <span class="ion-ios-arrow-forward"></span>
+                    </a>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Año</h4>
+                        <span>1957
+                        </span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Estado</h4>
+                        <span>Mint</span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Discografica</h4>
+                        <span>Blue Note</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item-b">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="img/Lee Morgan – Indeed! (Vinyl).jpeg" alt="" class="img-a img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <p class="card-title-a">
+                      <a href="#">Lee Morgan -
+                        <br /> Indeed!</a>
+                    </p>
+                  </div>
+                  <div class="card-body-a">                    
+                    <a href="#" class="link-a">Click para ver mas
+                      <span class="ion-ios-arrow-forward"></span>
+                    </a>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Año</h4>
+                        <span>1957
+                        </span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Estado</h4>
+                        <span>Mint</span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Discografica</h4>
+                        <span>Blue Note</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item-b">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="img/James Etta - Live At Montreux 1975 1993 (Vinyl).jpeg" alt="" class="img-a img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <p class="card-title-a">
+                      <a href="#">Etta James -
+                        <br /> Live at Montreaux</a>
+                    </p>
+                  </div>
+                  <div class="card-body-a">
+                    <a href="property-single.html" class="link-a">Click para ver mas
+                      <span class="ion-ios-arrow-forward"></span>
+                    </a>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Año</h4>
+                        <span>1957
+                        </span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Estado</h4>
+                        <span>Mint</span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Discografica</h4>
+                        <span>Blue Note</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <!-- ======= Blog ======= -->
+    <section class="section-news section-t8"  id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Ultimas entradas al blog</h2>
+              </div>
+              <div class="title-link">
+                <a href="#">Todos los posts
+                  <span class="ion-ios-arrow-forward"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="new-carousel" class="owl-carousel owl-theme">
+          <div class="carousel-item-c">
+            <div class="card-box-b card-shadow news-box">
+              <div class="img-box-b">
+                <img src="img/album_card.jpg" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="#" class="category-b">Ir al post</a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a href="#">Cómo empezar tu 
+                        <br> colección</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">18 Sep. 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item-c">
+            <div class="card-box-b card-shadow news-box">
+              <div class="img-box-b">
+                <img src="img/album_card_2.jpg" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="#" class="category-b">Ir al post</a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a href="#">Consejos para limpiar
+                        <br> tus discos</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">30 jun. 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item-c">
+            <div class="card-box-b card-shadow news-box">
+              <div class="img-box-b">
+                <img src="img/card_11.jpg" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="#" class="category-b">Ir al post</a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a href="blog-single.html">Eligiendo la mejor 
+                        <br> cápsula</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">18 Sep. 2017</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item-c">
+            <div class="card-box-b card-shadow news-box">
+              <div class="img-box-b">
+                <img src="img/record_storage.jpeg" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="#" class="category-b">Ir al post</a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a href="#">El reto de almacenar
+                        <br> almacenar grandes colleciones</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">9 dic.2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Sección Newsletter-->
+<section id="contacto" class="text-center text-white my-4 py-5" style="background-image: url(img/turntable_6.jpg);background-position: center;">
+  <h1 class="intro-title mb-4">
+    Suscribete a nuestro <br> 
+    <span class="color-b">Newsletter</span>
+  </h1>
+  <p>Mantente al día con todas las novedades en lanzamientos y novedades en nuestro catálogo</p>
+  <form class="w-75 mx-auto text-center">
+    <div class="form-group pt-5">
+      <label for="exampleFormControlInput1">Correo electrónico</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com" />
+    </div>
+    <p class="intro-subtitle intro-price pt-3">
+      <a href="#"><span class="price-a">quiero recibir novedades</span></a>
+    </p>
+  </form>
+</section>
+    
+<!-- =====Sección contacto==== -->
+<section id="contacto" class="text-center text-white my-4 py-5" style="background-image: url(img/turntable_4.jpg);background-position: center;">
+  <h1 class="intro-title mb-4">
+    Ponte en contacto <br> 
+    <span class="color-b">con nosotros</span>
+  </h1>
+  <p>
+    Si prefieres puedes ponerte en contacto con Vinilos Jazz mediante el siguiente formulario, <br>responderemos lo más rápido posible a tus consultas
+  </p>
+  <form class="w-75 mx-auto text-center pt-3" >
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Correo electrónico</label>
+      <input type="email" class="form-control w-75 mx-auto" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Tu mensaje</label>
+      <textarea class="form-control  w-75 mx-auto" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <p class="intro-subtitle intro-price pt-3">
+      <a href="#"><span class="price-a">Enviar mensaje</span></a>
+    </p>
+  </form>
+</section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+ 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="nav-footer">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">Música</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Quienes somos</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">blog</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="socials-a">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-footer">
+            <p class="copyright color-text-a">
+              &copy; Copyright
+              <span class="color-a"><a href="https://github.com/Dante3056">Dante Sollini</a></span> todos los derechos reservados.
+            </p>
+          </div>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/scrollreveal/scrollreveal.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
